@@ -8,12 +8,14 @@
 - **Description:**  
   This challenge involved building a simple and clean QR code card component based on a Figma design. The component displays a QR code image, a heading, and a short description, all centered within a card.
 - **Key Features:**  
-  - Responsive card layout using Flexbox  
+  - Responsive card layout using **Bootstrap's grid system** and utility classes  
+  - Use of **Bootstrap's card component** for simplified markup and styling  
   - Custom CSS properties for colors and spacing  
   - Google Fonts integration (Outfit)  
   - Mobile-first design and accessibility considerations
 - **What I Learned:**  
-  I practiced using semantic HTML, CSS custom properties, and Flexbox for layout. I also improved my ability to match a design exactly and ensure responsiveness across devices.
+  I learned how to use Bootstrap's grid and flex utilities to center content responsively, and how to simplify markup using Bootstrap's card component.  
+  I practiced using semantic HTML, CSS custom properties, and improved my ability to match a design exactly and ensure responsiveness across devices.
 
 ### Blog Preview Card ([blog-preview-card-main](blog-preview-card-main/))
 - **Description:**  

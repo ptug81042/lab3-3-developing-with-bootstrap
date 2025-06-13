@@ -33,41 +33,38 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- [Bootstrap 5](https://getbootstrap.com/) for layout, grid, and utility classes
+- Bootstrap's card component for simplified markup and styling
 - Mobile-first workflow
 - [Outfit](https://fonts.google.com/specimen/Outfit) font
 
 ### What I learned
 
 During this project, I learned how to:
+- Use Bootstrap's grid system and utility classes to center and space content responsively.
+- Simplify markup and layout using Bootstrap's card component.
 - Use CSS custom properties for consistent color theming.
 - Apply a mobile-first approach for responsive design.
-- Center content both vertically and horizontally using Flexbox.
-- Implement a clean card UI with rounded corners and subtle shadows.
 - Use Google Fonts and follow a provided style guide for typography.
 
-Here is a snippet of the CSS custom properties and responsive container:
+Here is a snippet of the updated HTML structure using Bootstrap:
 
-```css
-:root {
-  --white: hsl(0, 0%, 100%);
-  --slate-300: hsl(212, 45%, 89%);
-  --slate-500: hsl(216, 15%, 48%);
-  --slate-900: hsl(218, 44%, 22%);
-}
-
-.qr-container {
-  background: var(--white);
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(31, 50, 81, 0.10);
-  padding: 1.5rem 1rem 2.5rem 1rem;
-  max-width: 320px;
-  width: 90vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+```html
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+  <div class="row w-100">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
+      <main class="card shadow p-4 text-center">
+        <img src="images/image-qr-code.png" alt="QR code" class="card-img-top rounded mb-3" />
+        <div class="card-body">
+          <h1 class="card-title h5 fw-bold mb-3">Improve your front-end skills by building projects</h1>
+          <p class="card-text text-secondary mb-0">
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+          </p>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
 ```
 
 ### Continued development
@@ -80,6 +77,7 @@ In future projects, I want to:
 ### Useful resources
 
 - [Frontend Mentor QR Code Component Challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) - The official challenge page.
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - For learning about Bootstrap's grid, card, and utility classes.
 - [MDN Web Docs - Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design) - Great resource for learning about responsive layouts.
 - [Google Fonts - Outfit](https://fonts.google.com/specimen/Outfit) - The font used in this project.
 

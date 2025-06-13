@@ -17,57 +17,43 @@ body {
   min-height: 100vh;
   background: var(--slate-300);
   font-family: var(--font-family);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.qr-container {
+/* Bootstrap handles layout, spacing, and centering.
+   Only keep custom styles for color, radius, and font. */
+
+.card {
   background: var(--white);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius) !important;
   box-shadow: 0 8px 24px rgba(31, 50, 81, 0.10);
-  padding: 1.5rem 1rem 2.5rem 1rem;
+  border: none;
   max-width: 320px;
-  width: 90vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.qr-image {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  max-width: 288px;
 }
 
-.qr-title {
+.card-img-top {
+  border-radius: 12px !important;
+  width: 100%;
+}
+
+.card-title {
   color: var(--slate-900);
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-  line-height: 1.2;
 }
 
-.qr-description {
+.card-text {
   color: var(--slate-500);
   font-size: 15px;
-  font-weight: 400;
-  margin: 0;
-  line-height: 1.4;
-  padding: 0 0.5rem;
 }
 
 @media (max-width: 375px) {
-  .qr-container {
-    padding: 1rem 0.5rem 2rem 0.5rem;
+  .card {
     max-width: 90vw;
+    padding: 1rem 0.5rem 2rem 0.5rem;
   }
-  .qr-title {
+  .card-title {
     font-size: 1.1rem;
   }
-  .qr-image {
+  .card-img-top {
     max-width: 100%;
   }
 }
