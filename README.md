@@ -1,5 +1,17 @@
 # Lab 3.3: Developing with Bootstrap
 
+## Reflection
+After refactoring these challenges to use Bootstrap, take a few minutes to answer the following questions:
+
+1. **What challenges did you face when refactoring your code to use Bootstrap?**  
+   When refactoring to use Bootstrap, one challenge was translating custom CSS layouts and spacing into Bootstrap’s grid system and utility classes. It required rethinking the structure of the HTML to take full advantage of Bootstrap’s components and utilities. Sometimes, finding the right combination of Bootstrap classes to match the original design took some experimentation, especially for precise alignment and spacing.
+
+2. **How did using Bootstrap utility classes and components simplify your styling process?**  
+   Bootstrap utility classes and components greatly simplified the styling process by providing ready-made solutions for layout, spacing, and alignment. Instead of writing custom CSS for margins, padding, centering, and card layouts, I could use Bootstrap’s classes directly in the HTML. This reduced the amount of custom CSS needed, made the code more maintainable, and sped up the development process.
+
+3. **In what scenarios might you choose not to use Bootstrap and write custom CSS instead?**  
+   I might choose not to use Bootstrap when a project requires a highly unique or branded design that doesn’t fit Bootstrap’s default styles, or when minimizing file size and dependencies is critical. For small, simple components or when fine-grained control over every aspect of the design is needed, writing custom CSS can offer more flexibility.
+
 ---
 
 ## Challenge Summaries
